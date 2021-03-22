@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="./style.css"/>
+    <title>National Youth Sports Nevada</title>
+</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="border:2px solid #9E3039;">
+    <a class="navbar-brand" href="index.html">
+        <img src="./images/NYS_-_header_logo-01_360x.webp" alt="" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html" style="color: #9E3039;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="./sports.html" style="color: #9e3039;">Sports</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./schedule.html" style="color: #9E3039;">Schedule/Standings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./uniform.html" style="color: #9E3039;">Order Uniform</a>
+        </li>
+        
+      </ul>
+      <div class="ml-5">
+          <i class="fa fa-facebook-square fa-lg" style="color: #9E3039;"></i>
+          <i class="fa fa-twitter-square fa-lg" style="color: #9E3039;"></i>
+          <i class="fa fa-instagram fa-lg" style="color: #9E3039;"></i>
+      </div>
+      <div class="mx-auto">
+        <button type="button" class="btn btn-sm" style="background-color: white; border: 2px
+        solid #9E3039; color: #9E3039;" data-toggle="modal" data-target="#createAccountModal">Create Account</button>
+      </div>
+    </div>
+    <span class="navbar-text ml-auto">
+        <button type="button" class="btn" data-toggle="modal" data-target="#loginModal">
+        <a role="button"  style="color: #9E3039; font-family: ‘Rubik’, sans-serif;">
+            <i class="fa fa-sign-in fa-lg" style="color: #9E3039;"></i><strong>Log In
+            </a></strong>
+        </button>
+    </span>
+  </nav>
+<body>
+    <!--Tabs-->
+    <div class="container">
+        <nav style="margin-top: 100px;"></nav>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="#football" class="nav-link active" id="football-tab" data-toggle="tab" role="tab"
+                    aria-controls="football" aria-selected="true" style="color: #9E3039;"><strong>Football</strong> </a>
+                </li>
+                <li class="nav-item"role="presentation">
+                    <a href="#soccer" class="nav-link" id="soccerTab" data-toggle="tab" role="tab"
+                    aria-controls="soccer" aria-selected="false" style="color: #9E3039;"><strong>Soccer</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#baseball" class="nav-link" id="baseballTab" data-toggle="tab" role="tab"
+                    aria-controls="baseball" aria-selected="false" style="color: #9E3039;"><strong>T-Ball/Baseball
+                    </strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a href= "#flagfootball" class="nav-link" id="flagFootballTab" data-toggle="tab" role="tab"
+                    aria-controls="flagfootball" aria-selected="false" style="color: #9E3039;">
+                    <strong>Flag Football</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#basketball" class="nav-link" id="basketballTab" data-toggle="tab" role="tab"
+                    aria-controls="basketball" aria-selected="false" style="color: #9E3039;">
+                    <strong>Basketball</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#volleyball" class="nav-link" id="volleyballTab" data-toggle="tab" role="tab"
+                    aria-controls="volleyball" aria-selected="false" style="color: #9E3039;">
+                    <strong>Volleyball</strong> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cheerleading" class="nav-link" id="cheerleadingTab" data-toggle="tab" role="tab"
+                    aria-controls="cheerleading" aria-selected="false" style="color: #9E3039;">
+                    <strong>Cheerleading</strong> </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="tabContent" style="margin-top: 50px; margin-bottom: 50px;">
+                
+            <!--Football-->
+            <div class="tab-pane fade show active" id="football" role="tabpanel" aria-labelledby="football">
+                <div class="row">
+                    <h2 style="color: #9E3039;"><strong>Unweighted Division</strong></h2>
+                </div>
+                <div class="row">
+                    <p style="color: #9E3039;"><strong>Our NYS Tackle Football Unweighted Division includes 
+                        standings, scores, weekly updates, and a full playoff system with awards. Rules are established 
+                        to help players prepare for high school football.</p>
+                </div>
+                <div class="container justify-content-center">
+                <div class="row" style="margin-top: 25px;">
+                    <div class="col-8 mx-auto">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <div class="row">
+                                <div class="col-6">
+                                    <h6 class="text-center" style="color: #9E3039;"><strong> 8U: <br><p>Ages 8 and under</p></strong></h6>            
+                                    <h6 class="text-center" style="color: #9E3039;"><strong>9U: <br><p>Ages 9 and under</p></strong></h6>            
+                                    <h6 class="text-center" style="color: #9E3039;"><strong>10U: <br><p>Ages 10 and under</p></strong></h6>
+                                    <h6 class="text-center" style="color: #9E3039;"><strong>11U: <br><p>Ages 11 and under</p></strong></h6>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="text-center" style="color: #9E3039;"><strong>12U: <br><p>Ages 12 and under</p></strong></h6>
+                                    <h6 class="text-center" style="color: #9E3039;"><strong>13U: <br><p>Ages 13 and under</p></strong></h6>
+                                    <h6 class="text-center" style="color: #9E3039;"><strong>14U: <br><p>Middle School Division<br>(8th Grade Max)</p> 
+                                    </strong></h6>
+                                    <p>Weight/Age Groups *age as of July 31, 2020</p> 
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <h5><strong>Required Equipment:</strong> </h5>
+                        <p style="color: #9E3039;">Standard helmet and facemask, seven piece pant pad set, football pants covering pant pads, rubber cleats or tennis shoes, shoulder pads, team jersey, mouthpiece.
+                                    **All items listed are NOT included in the registration pricing and must be purchased by parents/guardians.</p>
+                        <h5><strong>Required Certification: </strong> </h5>    
+                        <p style="color: #9E3039;"> Certification is now through National Sports ID.  Players will get invited to certify via individual team rosters by their team managers.  Every child must submit a birth certificate, report card, and closeup headshot of their child.
+                        Common Game Locations: Various high schools and public parks throughout the valley.
+                        Registration fee includes: league dues for season, practice fields, game fields, tournament awards, player superlative awards, officials, liability insurance with a medical rider, and league administration.
+                        </p>
+                        <p style="color: #9E3039;">NYS has a strict No Refund policy. In the case of needing to cancel your registration, monies will be assigned as a credit on your account. Account credits never expire and are transferable.
+                        NYS Nevada is a proud member of American Youth Football & USA Football.  Each Fall NYS Championship teams will have the opportunity to compete in AYF Regional & National Championship Tournaments.  NYS is also the official youth sports league of ESPN Events & the Las Vegas Bowl.</p>
+                    </div>     
+                </div>   
+                <div class="row" style="margin-top: 20px;">
+                         <h2 style="color: #9E3039;"><strong>Weighted Division</strong></h2>
+                </div>
+                <div class="row">
+                    <p style="color: #9E3039;">Our NYS Tackle Football Weighted Division includes standings, scores, weekly updates, and a full playoff system with awards.  Players are weighed prior to every game. Rules are established to help players prepare for high school football.
+                    Weight/Age Groups *age as of July 31, 2020
+                    7U: 5 and 6 year olds (Unlimited), 7 year olds (Max 115 lbs)
+                    JR. MIDGET 13U: 11 and 12 year olds (Max 169 lbs), 13 year olds (Max 149 lbs)</p>
+                </div>  
+                <div class="row">
+                        <div class="col-9">
+                            <h5><strong>Required Equipment: </strong></h5>
+                            <p style="color: #9E3039;">Standard helmet and facemask, seven piece pant pad set, football pants covering pant pads, rubber cleats or tennis shoes, shoulder pads, team jersey, mouthpiece.
+                                **All items listed are NOT included in the registration pricing and must be purchased by parents/guardians.</strong></p>
+                                <h5><strong>Required Certification:  </strong></h5>
+                            <p style="color: #9E3039;"><strong>Certification is now through National Sports ID.  Players will get invited to certify via individual team rosters by their team managers.  Every child must submit a birth certificate, report card, and closeup headshot of their child.
+                                Common Game Locations: Various high schools and public parks throughout the valley.
+                                Registration fee includes: league dues for season, practice fields, game fields, tournament awards, player superlative awards, officials, liability insurance with a medical rider, and league administration.</strong></h4>
+                        
+                            <p style="color: #9E3039;"><strong>NYS has a strict No Refund policy. In the case of needing to cancel your registration, monies will be assigned as a credit on your account. Account credits never expire and are transferable.
+                                NYS Nevada is a proud member of American Youth Football & USA Football.  Each Fall NYS Championship teams will have the opportunity to compete in AYF Regional & National Championship Tournaments.  NYS is also the official youth sports league of ESPN Events & the Las Vegas Bowl.</strong></p>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+            
+
+<!--Soccer-->
+                <div class="tab-pane fade" id="soccer" role="tabpanel" aria-labelledby="soccerTab">
+                    
+                    <div class="row">
+                        <h2 style="color: #9E3039;"><strong>3 Year Old Division</strong></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="color: #9E3039;"><strong>3 Year old Soccer is to introduce kids to the game. 
+                                Play is five versus five without a goalkeeper with a reduced field and goal size. 
+                                One coach will be allowed on the field for each team to help guide players. Older 2 
+                                year olds are welcome to play.</p>
+                        </div>
+                    </div>
+                                <div class="container justify-content-center">
+                                    <div class="row">   
+                                        <div class="card col-4">
+                                            <div class="card-body">
+                                                <h6>Coed: Girls & Boys</h6>
+                                                <h6>Ball Size: Size Three (3)</h6>
+                                                <h6>Field Size: Approximately 15 yards x 20 yards</h6>
+                                                <h6>Goal Size: 4’ Height x 6’ Wide</h6>
+                                                <h6>Game: Four Quarters, Six Minutes each</h6>
+                                                <h6>Coaches are Parent Volunteers</h6>
+                                                <h6>NYS has a minimum 50% play rule in our recreational sports.</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                            <div class="col">
+                                <h5><strong>Required Equipment:</strong> </h5>
+                                <p style="color: #9E3039;">Shin Guards & Soccer Ball
+                                <h5><strong>Registration Fee includes:</strong></h5> 
+                                <p style="color: #9E3039;">League dues for season, game fields, game equipment, field staff, liability insurance with a 
+                                    medical rider, game jersey, and league administration. </p>
+                            </div>
+                            <div class="col">
+                                <p style="color: #9E3039;">NYS has a strict No Refund policy.  In the case of needing to cancel your 
+                                    registration, monies will be assigned as a credit to your account.  Account credits never expire and 
+                                    are transferable.</p>
+                            </div>
+                    <div class="row">
+                            <h2 style="color: #9E3039;"><strong>5 U Division</strong></h2>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <p style="color: #9E3039;"><strong>For ages 5 and under soccer division is aimed 
+                                    towards those in their first few seasons of the sport. There is no goalkeeper in 
+                                    this division and is played six versus six with a reduced field and goal size. One 
+                                    coach will be allowed on the field for each team to help guide players!</p>
+                                <div class="card col-4">
+                                    <div class="card-body">
+                                        <h6>Coed: Girls & Boys</h6>    
+                                        <h6>Ball Size: Size Three (3)</h6>
+                                        <h6>Field Size: Approximately 15 yards x 30 yards</h6>
+                                        <h6>Goal Size: 4’ Height x 6’ Wide</h6>
+                                        <h6>Game: Four Quarters, Eight Minutes each</h6>
+                                        <h6>Coaches are Parent Volunteers</h6>
+                                        <h6>NYS has a minimum 50% play rule in our recreational sports.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4><strong>Required Equipment: </strong></h4>
+                                <p  style="color: #9E3039;">Shin Guards & Soccer Ball</p>
+                                  
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4><strong>Registration Fee includes:</strong></h4>
+                                <p style="color: #9E3039;">League dues for season, game fields, game equipment, field staff, liability insurance with a medical rider, game jersey, and league administration.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p style="color: #9E3039;">NYS has a strict No Refund policy.  In the case of needing to cancel your registration, monies will be assigned as a credit to your account.  Account credits never expire and are transferable. </p>
+                            </div>
+                        </div>
+            
+<!--Baseball-->
+                <div class="tab-pane fade" id="baseball" role="tabpanel" aria-labelledby="baseball">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 style="color: #9E3039;"><strong>Baseball</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>3-4 T-Ball</strong></h2>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>For ages 3-4, T-Ball is designed to introduce kids to the game of baseball.  All players get the opportunity to hit the ball directly off the tee and run the bases. All players will bat and play in the field. No outs or scores are kept.
+                                Coed: Girls & Boys
+                                Base Distance: Approximately 45 feet
+                                Game: 3 innings or 50 minutes, whichever comes first
+                                Coaches are Parent Volunteers
+                                NYS has a minimum 50% play rule in our recreational sports. </strong></h4>
+                            </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>Required Equipment: T-Ball Glove & Bat Baseball (cleats are not required).
+                                Registration includes: league dues for season, game fields, game equipment, officials, liability insurance with a medical rider, game jersey, hat, and league administration. </strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>NYS has a strict No Refund policy.  In the case of needing to cancel your registration, monies will be assigned as a credit to your account.  Account credits never expire and are transferable.  </strong></h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>6 U Coach Pitch 1</strong></h2>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>For ages 6 and under, Coach Pitch I Baseball program is designed for those with little or no experience in the sport. Each player will have the opportunity to hit an underhand pitch from a coach. If the player does not get a hit in three pitches, they may hit off a tee. All players will bat and play in the field. No outs or scores are kept.
+                                Coed: Girls & Boys
+                                Base Distance: Approximately 45 feet
+                                Game: 4 innings or 75 minutes, whichever comes first
+                                Coaches are Parent Volunteers
+                                NYS has a minimum 50% play rule in our recreational sports.</strong></h4>
+                            </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>Required Equipment: T-Ball Glove & Bat Baseball (cleats are not required).
+                            Registration includes: league dues for season, game fields, game equipment, officials, liability insurance with a medical rider, game jersey, hat, and league administration.</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>NYS has a strict No Refund policy.  In the case of needing to cancel your registration, monies will be assigned as a credit to your account.  Account credits never expire and are transferable.  </strong></h4>
+                        </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>8 U Coach Pitch 2</strong></h2>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>8U Coach Pitch II Baseball is designed for those with little or no experience in the sport. In this division, coaches still pitch, but now they will pitch overhanded with a more precise rule set that is stricter than divisions before. Strikes and outs are recorded in this division and a run rule is enforced. This becomes the transition level between T-Ball and Kid Pitch Baseball. Umpires are introduced in this division.
+                                Coed: Girls & Boys
+                                Base Distance: Approximately 60 feet
+                                Game: 6 innings or 90 minutes, whichever comes first
+                                Coaches are Parent Volunteers
+                                NYS has a minimum 50% play rule in our recreational sports.</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>Required Equipment: T-Ball Glove & Bat Baseball (cleats are not required).
+                            Registration includes: league dues for season, game fields, game equipment, Umpire, liability insurance with a medical rider, game jersey, hat, and league administration.</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>NYS has a strict No Refund policy.  In the case of needing to cancel your registration, monies will be assigned as a credit to your account.  Account credits never expire and are transferable.  </strong></h4>
+                        </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>11U Kid Pitch Baseball</strong></h2>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>For kids 11 and under, Kid Pitch Baseball is designed for those with a little experience in the sport. In this division, the rule set is very similar to the one in 7-8 Coach Pitch II, but now the pitching is done by the players. The ability to steal bases is introduced in this division, although with modifications. Bunting is also allowed in Kid Pitch. Umpires are provided. This division can sometimes require some light travel to games sites in Henderson, Las Vegas, or North Las Vegas.
+                                    Coed: Girls & Boys
+                                    Base Distance: Approximately 60 feet, Pitching Rubber 38 feet
+                                    Game: 6 innings or 100 minutes, whichever comes first
+                                    Required Equipment: Baseball Glove, Baseball Bat
+                                    Coaches are Parent Volunteers
+                                    NYS has a minimum 50% play rule in our recreational sports.</strong></h4>
+                            </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>NYS Provided Practice Gear: Head Coaches can check-out practice gear at no charge during the season. Practice gear includes Catcher’s Equipment (except glove), batting helmets, and baseballs.
+                                Required Equipment: Rubber Baseball Cleats Encouraged.
+                                Registration includes: league dues for season, game fields, game equipment, umpire, liability insurance with a medical rider, game jersey, hat, and league administration.</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>NYS has a strict No Refund policy.  In the case of needing to cancel your registration, monies will be assigned as a credit to your account.  Account credits never expire and are transferable.  </strong></h4>
+                        </div>
+                </div>
+               
+11:12
+<!--Basketball-->
+                <div class="tab-pane fade" id="basketball" role="tabpanel" aria-labelledby="basketball"k>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 style="color: #9E3039;"><strong>Basketball</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>6U Recreational</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>8U Recreational</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>11U Recreational</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>8U Elite</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>10U Elite</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>12U Elite</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>15U Elite</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>S</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>M</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>T</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>W</strong> </h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>TH</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>F</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>S</strong></h4>
+                        </div>
+                    </div>
+                </div>
+11:13
+<!--Flag Football-->
+                <div class="tab-pane fade" id="flagfootball" role="tabpanel" aria-labelledby="baseball">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 style="color: #9E3039;"><strong>Flag Football</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>Recreational</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>Elite NFL Flag Football</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>7V7 HS Club Pylon Football</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>S</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>M</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>T</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>W</strong> </h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>TH</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>F</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>S</strong></h4>
+                        </div>
+                    </div>
+                </div>
+11:13
+<!--Volleyball-->
+                <div class="tab-pane fade" id="volleyball" role="tabpanel" aria-labelledby="baseball">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 style="color: #9E3039;"><strong>Volleyball</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>Recreational</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>Elite</strong></h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>S</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>M</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>T</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"><strong>W</strong> </h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>TH</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>F</strong></h4>
+                        </div>
+                        <div class="col-1 text-center">
+                            <h4 style="color: #9E3039;"> <strong>S</strong></h4>
+                        </div>
+                    </div>
+                </div>
+11:13
+<!--Cheerleading-->
+                <div class="tab-pane fade" id="cheerleading" role="tabpanel" aria-labelledby="cheerleading">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 style="color: #9E3039;"><strong>Cheerleading</strong></h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h2 style="color: #9E3039;"><strong>All Ages</strong></h2>
+                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>Cheerleading works in conjunction with our NYS Tackle Football program. Each participant will be invited to a pre-season skills camp with the UNLV Cheerleading Squad.  Then, they will cheer for their assigned NYS Tackle Football Team at their games.
+                                    The season will conclude with a Cheerleading Showcase at the end of the season.  Please note that the uniform is NOT included in the price.  Each team will provide their own custom uniforms.  Prices will vary by team for cost of the uniforms & accessories.  Coaches are Parent Volunteers.</strong></h4>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>Ages: 5-15
+                                    Coed: Boys & Girls
+                                    Games: Most tackle football games will be played on Saturday’s however, there will be occasional weeknight games.</strong></h4>
+                            </div>
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>NYS Cheerleading Questions? Please email val@nysnevada.com
+                                    NYS Nevada is a proud member of American Youth Cheer (AYC). Cheerleading teams have the ability to compete in AYC’s Desert Mounttain Regionals.  Teams may also get a chance to compete in AYC Nationals in Orlando, FL in December.</strong></h4>
+                            </div>
+                            <div class="col-1 text-center">
+                                <h4 style="color: #9E3039;"><strong>NYS has a strict No Refund policy.  In the case of needing to cancel your registration, monies will be assigned as a credit to your account.  Account credits never expire and are transferable.  </strong></h4>
+                            </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!--Footer-->
+<footer class="site footer">
+    <div class="container-fluid">
+        <div class="row" style="background-color: #9E3039;">
+            <div class=" col-2 d-flex align-self-center">
+                <img src="./images/Footer Logo.png" alt="" style="height: 50px;">
+            </div>
+            <div class="col-2 text-wrap">
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white;">Sports</a></li>
+                    <li><a href="#" style="color: white;">Schedule/Standings</a></li>
+                    <li><a href="#" style="color: white;">Order Uniform</a></li>
+                    <li><a href="#" style="color: white;">Events</a></li>
+                </ul>
+            </div>
+            <div class="col-3 mx-auto" style="color: white;">
+                <h6>Summerlin/North Las Vegas</h6>
+                <p><i class="fa fa-phone-square"></i> 702.454.7863 (ext 2) <br>
+                <i class="fa fa-envelope-square"></i> lasvegas@nysnevada.com</p>
+            </div>
+            <div class="col-3 mx-auto" style="color: white;">
+                <h6>Henderson/South Las Vegas</h6>
+                <p><i class="fa fa-phone-square"></i> 702.454.7863 <br>
+                <i class="fa fa-envelope-square"></i> henderson@nysnevada.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
